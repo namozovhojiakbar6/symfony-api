@@ -5,11 +5,16 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.2",
+        "api-platform/core": "^4.3",
+        "doctrine/doctrine-bundle": "*",
+        "doctrine/orm": "^3.7",
+        "symfony/asset": "7.2.*",
         "symfony/console": "^7.2",
         "symfony/dotenv": "^7.2",
-        "symfony/flex": "^2",
+        "symfony/flex": "*",
         "symfony/framework-bundle": "^7.2",
         "symfony/runtime": "^7.2",
+        "symfony/twig-bundle": "7.2.*",
         "symfony/yaml": "^7.2"
     },
     "require-dev": {
