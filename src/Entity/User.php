@@ -15,52 +15,52 @@ class User
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $fullname = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $name = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $surname = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $email = null;
 
-    #[ORM\Column(length: 0)]
-    private ?string $age = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $phone = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getFullname(): ?string
+    public function getName(): ?string
     {
-        return $this->fullname;
+        return $this->name;
     }
 
-    public function setFullname(string $fullname): static
+    public function setName(?string $name): static
     {
-        $this->fullname = $fullname;
+        $this->name = $name;
 
         return $this;
     }
 
-    public function getSurname(): ?string
+    public function getEmail(): ?string
     {
-        return $this->surname;
+        return $this->email;
     }
 
-    public function setSurname(string $surname): static
+    public function setEmail(?string $email): static
     {
-        $this->surname = $surname;
+        $this->email = $email;
 
         return $this;
     }
 
-    public function getAge(): ?string
+    public function getPhone(): ?string
     {
-        return $this->age;
+        return $this->phone;
     }
 
-    public function setAge(string $age): static
+    public function setPhone(?string $phone): static
     {
-        $this->age = $age;
+        $this->phone = $phone;
 
         return $this;
     }
