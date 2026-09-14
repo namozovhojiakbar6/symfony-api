@@ -8,6 +8,7 @@
         "api-platform/core": "^4.3",
         "doctrine/doctrine-bundle": "*",
         "doctrine/orm": "^3.7",
+        "nelmio/cors-bundle": "^2.6",
         "symfony/asset": "7.2.*",
         "symfony/console": "^7.2",
         "symfony/dotenv": "^7.2",
